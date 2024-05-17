@@ -1,0 +1,75 @@
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    background-image: url("math3.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+
+}
+button{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(107, 138, 165);
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(50, 49, 49);
+    
+
+}
+#continer{
+    max-width: 500px;
+    border-radius: 15px;
+    background-color: rgb(215, 212, 212);
+    overflow: hidden;
+    font-family: arial,sans-serif;
+    box-shadow: 9px 9px 9px rgb(45, 45, 45);
+   
+}
+#demo{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(189, 184, 184);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 5rem;
+    border: none;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button:hover{
+    background-color: rgb(114, 136, 180);
+
+}
+button:active{
+    background-color: rgb(120, 155, 186);
+}
+.op{
+    background-color: rgb(139, 143, 154); 
+    color: rgb(52, 93, 216);  ;
+}
+.op:hover{
+    background-color: rgb(139, 158, 209); 
+}
+.op:active{
+    background-color: rgb(141, 160, 223); 
+}
+.opp{
+    
+    background-color: rgb(55, 99, 230); 
+}
+.opp:hover{
+    background-color: rgb(95, 125, 214);
+}
+.opp:active{
+    background-color: rgb(118, 150, 247); 
+}

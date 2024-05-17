@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <title>Calculator</title>
+    </head>
+    <link rel="stylesheet" href="cal.css">
+    <body>
+    <div id="continer">
+        <input type="text" id="demo" readonly>
+        <div id="keys">
+            <button onclick="Clear()" class="op">AC</button>
+            <button onclick="change()" class="op">+/-</button>
+            <button class="op">X</button>
+            <button onclick="Display('/')" class="op">/</button>
+            <button onclick="Display('7')">7</button>
+            <button onclick="Display('8')">8</button>
+            <button onclick="Display('9')">9</button>
+            <button onclick="Display('+')" class="op">+</button>
+            <button onclick="Display('4')">4</button>
+            <button onclick="Display('5')">5</button>
+            <button onclick="Display('6')">6</button>
+            <button onclick="Display('-')"class="op">-</button>
+            <button onclick="Display('1')">1</button>
+            <button onclick="Display('2')">2</button>
+            <button onclick="Display('3')">3</button>
+            <button onclick="Display('*')"class="op">*</button>
+            <button onclick="per()" >%</button>
+            <button onclick="Display('0')">0</button>
+            <button onclick="Display('.')">.</button>
+            <button onclick="dip()" class="opp">=</button>
+        </div>
+    </div>
+        <script>
+            let show = document.getElementById("demo");
+            function Display(num){
+                show.value += num;
+            }
+            function Clear(){
+                show.value = "";
+            }
+            function dip(){
+                try{
+
+                show.value = eval(show.value);
+                }
+                catch(error){
+                    show.value = "ERROR";
+                }
+            }
+            function per(){
+                show.value = show.value/100;
+
+            }
+            function change(){
+                    show.value = -show.value;
+                
+            }
+        </script>
+    </body>
+</html>
